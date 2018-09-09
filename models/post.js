@@ -7,7 +7,7 @@ var PostSchema = Schema({
     description: String,
     short_description: String,
     date: Date,
-    category: category,
+    category: String,
     user: { type: Schema.ObjectId, ref: 'User' }
 
 });

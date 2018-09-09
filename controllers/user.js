@@ -176,7 +176,7 @@ function getImageFile(req, res) {
 }
 
 function GetUsers(req, res) {
-    User.find({ role: 'admin' }).exec((err, users) => {
+    User.find({ rol: 'admin' }).exec((err, users) => {
         if (err) {
             res.status(500).send({ message: 'Error en la peticion' })
         } else {
